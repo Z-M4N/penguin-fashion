@@ -5,24 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
     <title>penguin-fashion</title>
 </head>
-   <header class=" pb-28 flex justify-center  bg-slate-700 pt-20">
+   <header class=" pb-28 md:flex justify-center  bg-slate-700 pt-20">
         <!-- nav -->
         <!-- banner -->
-        <div class=" space-y-8">
+        <div class=" space-y-8 px-4">
             <h1 class="uppercase text-7xl text-yellow-500 pt-20">be the penguin<br><span>of winter</span></h1>
             <p class="text-white">Lorem Ipsum is simply dummy text of the printing<br> 
               and typesetting industry.</p>
               <button class="bg-green-600 p-3 rounded-lg text-white uppercase ">buy now</button>
         </div>
         <div>
-           <img src="/penguin-fashion/images/model.png" alt="">
+           <img class="w-3/4 md:w-full" src="/penguin-fashion/images/model.png" alt="">
         </div>
    </header> 
-  
-  <main>
-
+  <!-- main section -->
+   <main class="container mx-auto">
+       <section class="mt-12">
+           <h2 class="text-5xl uppercase font-semibold mx-auto">W0Man Jacket</h2>
+           <!-- jacket card -->
+           <div> 
+             <img src="/penguin-fashion/images/jacket-1.png" 
+             alt="">
+             <div>
+              <h3 class="text-2xl">Yellow Coat Jacket</h3>
+              <p>Lorem Ipsum is simply dummy text of the<br> 
+                printing and typesetting industry.</p>
+                <div class="flex">
+                    <h2 class="text-4xl">$234</h2>
+                  <button class="uppercase bg-green-600 rounded p-2 text-white">buy now</button>
+                </div>
+               
+             </div>
+           </div>
+       </section>
   </main>
   <footer>
 
